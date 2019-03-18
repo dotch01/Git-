@@ -1,8 +1,9 @@
-# test
-just a test repository
+# Git & terminal command
+
+
 
 <html>
   <body>
-    <p>Nice to meet you!</p>
+    <p style="color = blue">Nice to meet you!</p>
     </body>
   </html>
