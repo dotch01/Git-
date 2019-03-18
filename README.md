@@ -4,6 +4,6 @@
 
 <html>
   <body>
-    <p style="color:blue;">Nice to meet you!</p>
+    <div style="color:blue;">Nice to meet you!</div>
     </body>
   </html>
