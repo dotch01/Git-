@@ -84,24 +84,16 @@
 <html>
   <body>
     <div style="font-size=20px;">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>git stash 先把做到一半的東西存起來，沒有add的文件要加上 -u </div>
+      <div>git stash list 查看存放到 stash 的檔案</div>
+      <div>git stash pop stash@{[存放順序數字]} 跳回去某個工作進度然後刪除這個存放的進度</div>
+      <div>git stash drop stash@{[存放順序數字]} 刪掉存放的進度</div>
+      <div>git stash apply stash@{[存放順序數字]} 跳回去某個工作進度</div>
+      <div>git filter-branch --tree-filter "終端指令" 可以用後面的指令去每個 commit 跑過一遍</div>
+      <div>git reset refs/original/refs/heads/master --hard 重新回去執行 filter-branch 前的狀態</div>
+      <div>git cherry-pick [SHA-1編碼] ... 可以簡某個分支的 commit 過來直接合併，加上 --no-commit 會先放到暫存區 不會直接合併</div>
+      <div>git filter-branch -f --tree-filter "終端指令" 可以用後面的指令去每個 commit 跑過一遍，並刪除備份點，再來 del .git/refs/original/refs/heads/master，刪除 git 備份點，在 git reflog expire --all --expire=now 強制 reflog 過期，最後 git gc --prune=now 清理垃圾，就可以清理乾淨要rm的檔案囉</div>
+      <div>git fsck 查看垃圾空間</div>
     </div>
   </body>
 </html>
