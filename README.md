@@ -6,8 +6,8 @@
       <div>git init 初始化 git 要備份的目錄</div>
       <div>git status 查看資料夾狀態</div>
       <div>echo "hello, git" > costom.html 新增檔案</div>
-      <div>git add costom.html 新增給 git 管理的檔案</div>
-      <div>git add *.(副檔名) 一次新增某種副檔名的檔案給 git 管理</div>
+      <div>git add [檔名.副檔名] 新增給 git 管理的檔案</div>
+      <div>git add [*.副檔名] 一次新增某種副檔名的檔案給 git 管理</div>
       <div>git add --all 將資料夾內全部檔案新增給 git 管理</div>
       <div>git commit -m "更改了甚麼的訊息" 執行commit 指令</div>
       <div>git commit -a -m "更改了甚麼的訊息" 參數只對已經存在 Repository 的檔案有效，對新加入的檔案是無效的</div>
@@ -17,23 +17,23 @@
       <div>git log --oneline --grep="訊息" 可以從 Commit 訊息裡面搜尋符合字樣的內容</div>
       <div>git log -S "訊息" 可以搜尋所有 Commit 的檔案</div>
       <div>git log --oneline --since="9am" --until="12am" --after="2017-01" 這樣可以找到「從 2017 年 1 月之後，每天早上 9 點到 12 點的 Commit」</div>
-      <div>git rm 檔案名稱.副檔名 不需要再 add 就可以直接加入暫存區</div>
-      <div>git rm 檔案名稱.副檔名 --cached 讓檔案不再被git控管，當 .gitgnore無法忽略某檔案時，可用此指令移出他</div>
-      <div>git mv A.副檔名 B.副檔名 把A檔案改名成B檔案，不需要 add</div>
+      <div>git rm [檔名.副檔名] 不需要再 add 就可以直接加入暫存區</div>
+      <div>git rm [檔名.副檔名] --cached 讓檔案不再被git控管，當 .gitgnore無法忽略某檔案時，可用此指令移出他</div>
+      <div>git mv [A.副檔名] [B.副檔名] 把A檔案改名成B檔案，不需要 add</div>
       <div>git commit --amend -m "更正的訊息" 修改最後一次 commit 的訊息</div>
       <div>git commit --amend --no-edit 把不想新增 commit 的檔案 add 後跟最後一次的 commit 合併</div>
-      <div>touch 目錄名稱/隨便一個檔案 在原本 git 控管目錄下新增資料夾後新增檔案，git 就可以知道資料夾的存在</div>
+      <div>touch [目錄名稱/檔案.副檔名] 在原本 git 控管目錄下新增資料夾後新增檔案，git 就可以知道資料夾的存在</div>
       <div>touch .gitignore 讓 git 忽略的檔案都要在此檔內編輯，檔名.副檔名、目錄/檔名.副檔名</div>
-      <div>git add -f 檔案名稱 忽略 .gitignore 的忽略規則</div>
+      <div>git add -f [檔名.副檔名] 忽略 .gitignore 的忽略規則</div>
       <div>git clean -fX 強制刪除被 .gitignore 忽略的檔案</div>
-      <div>git log 檔名.副檔名 查看此檔案的 commit 紀錄，git log -p 可詳細察看每次 commit 做了甚麼更改</div>
-      <div>git blame 檔名.副檔名 能知道某個檔案的某一行是誰寫的， blame 後面加上 -L 行數,行數 查看特定的某幾行</div>
-      <div>git checkout 檔名.副檔名 救回某個被刪除的檔案， checout 後面+ . 可以把所有被 del 的檔案救回</div>
+      <div>git log [檔名.副檔名] 查看此檔案的 commit 紀錄，git log -p 可詳細察看每次 commit 做了甚麼更改</div>
+      <div>git blame [檔名.副檔名] 能知道某個檔案的某一行是誰寫的， blame 後面加上 -L 行數,行數 查看特定的某幾行</div>
+      <div>git checkout [檔名.副檔名] 救回某個被刪除的檔案， checout 後面+ . 可以把所有被 del 的檔案救回</div>
       <div>git checkout HEAD~2(代表幾個版本以前) 把以前版本的某個或某些檔案還原到目錄下</div>
-      <div>git reset (用log查看的編號)+上箭頭或~數字 拆除 Commit，一個^代表回到前幾次，通常超過2次會寫成~3</div>
-      <div>git reset (用log查看的編號) 回到指定的Commit</div>
+      <div>git reset [用log查看的編號]+上箭頭或~[數字] 拆除 Commit，一個^代表回到前幾次，通常超過2次會寫成~3</div>
+      <div>git reset [用log查看的編號] 回到指定的Commit</div>
       <div>git reset 模式補充 Commit拆出來的檔案 --mixed 檔案丟回工作目錄 --soft 丟回暫存區 --hard 直接丟掉</div>
-      <div>git add -p 檔名.副檔名 只 commit 部分 code</div>
+      <div>git add -p [檔名.副檔名] 只 commit 部分 code，可在git介面調整</div>
     </div>
   </body>
 </html>
@@ -116,24 +116,22 @@
 <html>
   <body>
     <div style="font-size=20px;">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>echo "# 要加到標題的字" > README.md 生成一個 README.md 檔案</div>
+      <div>git remote add [origin(可改)] [資源庫的 clone or download可察看此地址] 設定遠端要推上去的的節點</div>
+      <div>git push -u [origin(可改)] [分支名稱] 把分支推到 origin 節點上 -u 代表設定 git push 推到的節點和要推出去的分支，定下次可以只打 git push</div>
+      <div>git push [origin(可改)] [分支名稱]:[分支名稱] 把分支推到節點上，會檢查有無存在此分支，有則更新沒有則建立</div>
+      <div>git fetch 下載線上更新的檔案，不會 merge </div>
+      <div>git pull --rebase 下載後 merge</div>
+      <div>git push -f 當兩個部分衝突到的時候，強制推上去的指令(不要隨便使用)</div>
+      <div>git clone [資源庫的 clone or download可察看此地址] [自取資料夾名稱] 複製(下載)一份上傳到 github 上的專案到資料夾，只有第一次會用到</div>
+      <div>git remote -v 查看專案的完整資訊，例如節點</div>
+      <div>git remote add [自訂節點名稱] [資源庫的 clone or download可察看此地址] 新增專案上傳的節點</div>
+      <div>git fetch [新增的節點名稱] 拉下新節點的檔案</div>
+      <div>git merge [新增的節點名稱]/master 合併本地專案跟網路上專案的不同</div>
+      <div>git push [節點名稱] :[分支名稱] 刪除在線上的分支</div>
+      <div>git format-patch [SHA-1編碼]..[SHA-1編碼] 產生更新檔</div>
+      <div>git format-patch -[數字] -o [/資料夾/...] 指產生最新幾次 commit 的更新檔，可指定產生的資料夾位置</div>
+      <div>git am [/資料夾/.../更新檔檔名 or *] 使用更新檔，可指定檔案或全部一起使用*</div>
     </div>
   </body>
 </html>
