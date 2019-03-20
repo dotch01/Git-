@@ -68,6 +68,22 @@
 <html>
   <body>
     <div style="font-size=20px;">
+      <div>git rebase -i [SHA-1編碼]  進入 Rebase 的互動模式 Rebase 指令的應用範圍會，從現在到指定編碼時，要更改的 commit 前面改成 r 就會進入 vim 編輯器</div>
+      <div>squash 進入 Rebase 的互動模式後，在編碼前輸入 squash 就會往上合併 commit </div>
+      <div>進入 Rebase 的互動模式後，在編碼前輸入 edit 在使用 git reset HEAD^ 跑完之後重新 add+commit 後記得 git rebase --continue 讓 rebase 跑完就可以把 commit 拆成多個了</div>
+      <div>進入 Rebase 的互動模式後，在編碼前輸入 edit ，然後繼續 git rebase --continue 後新增檔案+add+commit 在git rebase --continue 後就成功在歷史紀錄裡新增 commit 了</div>
+      <div>git rebase -i [SHA-1編碼] 進入 Rebase 的互動模式後，移動 commit 紀錄的順序(從上到下是舊到新)存檔退出後再執行一次 git rebase -i [SHA-1編碼] 就可更改 commit 順序</div>
+      <div>若要刪除 commit 及是刪除 commit 紀錄後存檔離開再次執行指令即可</div>
+      <div>git revert HEAD --no-edit 取消最後一次的 commit 並不要編輯訊息，但會增加一個 commit 且不會刪除不要的 commit</div>
+    </div>
+  </body>
+</html>
+
+# Another common quetion
+
+<html>
+  <body>
+    <div style="font-size=20px;">
       <div></div>
       <div></div>
       <div></div>
@@ -90,11 +106,45 @@
   </body>
 </html>
 
-# Another common quetion
-
 # Tags
 
+<html>
+  <body>
+    <div style="font-size=20px;">
+      <div>git tag [標籤名稱] [SHA-1編碼] 幫某個 commit 貼上標籤</div>
+      <div>git tag [標籤名稱] [SHA-1編碼] -a -m "訊息" 幫某個 commit 貼上標籤並附上訊息</div>
+      <div>git tag -d [標籤名稱] 刪除標籤</div>
+      <div>分支會隨著 commit 移動但標籤不會</div>
+    </div>
+  </body>
+</html>
+
 # GitHub
+
+<html>
+  <body>
+    <div style="font-size=20px;">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
 
 # Terminal command
 
