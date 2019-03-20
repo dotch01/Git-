@@ -1,6 +1,5 @@
 # Git commit command
 
-
 <html>
   <body>
     <div style="font-size=20px;">
