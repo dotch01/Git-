@@ -3,7 +3,7 @@
 <html>
   <body>
     <div style="margin:0px auto;">
-    <div style="font-size=20px;">cd 移動到目錄</div>
+    <div style="font-size=24px;">cd 移動到目錄</div>
     <div style="font-size=20px;">mkdir 建立資料夾</div>
     <div style="font-size=20px;">git init 初始化git要備份的目錄</div>
     <div style="font-size=20px;">git status 查看資料夾狀態</div>
