@@ -1,4 +1,4 @@
-# Git & terminal command
+# Git command
 
 <html>
   <body>
@@ -14,3 +14,5 @@
       </div>
     </body>
   </html>
+
+# Terminal command
