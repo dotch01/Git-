@@ -3,8 +3,6 @@
 <html>
   <body>
     <div style="font-size=20px;">
-      <div></div>
-      <div></div>
       <div>git init 初始化 git 要備份的目錄</div>
       <div>git status 查看資料夾狀態</div>
       <div>echo "hello, git" > costom.html 新增檔案</div>
@@ -35,11 +33,41 @@
       <div>git reset (用log查看的編號)+上箭頭或~數字 拆除 Commit，一個^代表回到前幾次，通常超過2次會寫成~3</div>
       <div>git reset (用log查看的編號) 回到指定的Commit</div>
       <div>git reset 模式補充 Commit拆出來的檔案 --mixed 檔案丟回工作目錄 --soft 丟回暫存區 --hard 直接丟掉</div>
+      <div>git add -p 檔名.副檔名 只 commit 部分 code</div>
+    </div>
+  </body>
+</html>
+
+# Git branch command
+
+<html>
+  <body>
+    <div style="font-size=20px;">
       <div>git reflog 查看被 --hard清除的 commit 在用git reset (用reflog查看的編號) --hard 可回到比較新的版本</div>
       <div>cat .git/refs/heads/master 查看 master 分支編碼</div>
-      <div>git branch 查看目前所在分支</div>
-      <div>git checkout 分支名稱 切換分支</div>
-      <div>git add -p 檔名.副檔名 只 commit 部分 code</div>
+      <div>git branch 查看目前所在分支和所有分支</div>
+      <div>git checkout [分支名稱] 切換分支</div>
+      <div>git branch [取分支名稱] 加入新分支</div>
+      <div>git branch -m [分支名稱] [更改成此名] 更改分支名稱</div>
+      <div>git branch -d [分支名稱] 刪除分支，大寫D可以強制刪除</div>
+      <div>git merge [分支名稱] 合併分支，要先切回去要合併的分支</div>
+      <div>git merge [分支名稱] --no-f 不要使用快轉模式，可以讓合回master的分支畫出小耳朵</div>
+      <div>git branch [取分支名稱] [SHA-1編碼] </div>
+      <div>git rebase [分支名稱] 合併分支，把目前所在分支合到指定的分支去，重新產生SHA-1編碼</div>
+      <div>git reset ORIG_HEAD --hard 跳回 rebase 前的狀態</div>
+      <div>git checkout --ours(--theirs) [檔名.副檔名] 決定要使用我或對方分支的二進位檔(例如圖片)</div>
+      <div>@ 可以取代HEAD使用</div>
+      <div>git branch [取分支名稱] [SHA-1編碼] 回到過去某個 commit 開啟分支</div>
+      <div>git checkout -b [取分支名稱] [SHA-1編碼] 回到過去某個 commit 開啟分支，並直接跳轉過去</div>
+    </div>
+  </body>
+</html>
+
+# Modify history message 
+
+<html>
+  <body>
+    <div style="font-size=20px;">
       <div></div>
       <div></div>
       <div></div>
@@ -61,6 +89,12 @@
     </div>
   </body>
 </html>
+
+# Another common quetion
+
+# Tags
+
+# GitHub
 
 # Terminal command
 
