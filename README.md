@@ -79,7 +79,7 @@
   </body>
 </html>
 
-# Another common quetion
+# Another common question
 
 <html>
   <body>
