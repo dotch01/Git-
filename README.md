@@ -4,6 +4,8 @@
   <body>
     <div style="font-size=20px;">
       <div>git init 初始化 git 要備份的目錄</div>
+      
+      
       <div>git status 查看資料夾狀態</div>
       <div>echo "hello, git" > costom.html 新增檔案</div>
       <div>git add costom.html 新增給 git 管理的檔案</div>
