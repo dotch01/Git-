@@ -1,4 +1,4 @@
-# Git command
+# Git commit command
 
 <html>
   <body>
@@ -36,10 +36,10 @@
       <div>git reset (用log查看的編號) 回到指定的Commit</div>
       <div>git reset 模式補充 Commit拆出來的檔案 --mixed 檔案丟回工作目錄 --soft 丟回暫存區 --hard 直接丟掉</div>
       <div>git reflog 查看被 --hard清除的 commit 在用git reset (用reflog查看的編號) --hard 可回到比較新的版本</div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>cat .git/refs/heads/master 查看 master 分支編碼</div>
+      <div>git branch 查看目前所在分支</div>
+      <div>git checkout 分支名稱 切換分支</div>
+      <div>git add -p 檔名.副檔名 只 commit 部分 code</div>
       <div></div>
       <div></div>
       <div></div>
